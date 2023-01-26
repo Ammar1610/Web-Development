@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variales and Datatypes</title>
+    <style>
+        .facebook{
+            background-color: blue;
+            height: 100px;
+            width: auto;
+            font-size: 20px;
+        }
+        .apple{
+            background-color: red;
+            height: 100px;
+            width: auto;
+            font-size: 20px;
+        }
+        .microsoft{
+            background-color: rgb(50, 206, 71);
+            height: 100px;
+            width: auto;
+            font-size: 20px;
+        }
+        .great{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="facebook" id="facebook">
+        <p>Facebook is <span class="great"> great</span>.</p>
+    </div>
+    <div class="apple" id="apple">
+        <p>Apple is <span class="great"> great</span>.</p>
+    </div>
+    <div class="microsoft">
+        <p>Microsoft is <span class="great"> great</span>. </p>
+    </div>
+    <button id="button1">Change Facebook Style.</button>
+    <button id="button2">Change Apple Style.</button>
+    <script>
+       var x = 4;
+       window.console.log(x);       /*4*/
+       var y;
+       y=3;
+       var z;
+       window.console.log("Value of z is " + z);                                  /*Value of z is undefined*/
+       var z = x+y; 
+       window.console.log("Type of z is " + typeof(z));                        /*Type of z is number*/
+       var z = x + " " + y;
+       window.console.log("value of z is " + z)                              /*4 3*/
+       window.console.log("Type of z is " + typeof(z));                     /*Type of z is string*/  
+       var check = (x==4);
+       window.console.log("Value of check is " +check );                  /*Value of check is TRUE*/
+       window.console.log("Type of check is " + typeof(check));          /*Boolean*/
+       var myArray = [1,2,3]
+       window.console.log("Value of myArray is " + myArray);           /*1,2,3*/
+       window.console.log("Type of myArray is " + typeof(myArray));   /*object*/
+       
+    </script>
+</body>
+</html>

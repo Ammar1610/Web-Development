@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>While Loop</title>
+    </head>
+    <body>
+        <p id="para">While Loops:</p>
+        <button onclick="game()">Start</button>
+        <div id="balance">Current Balance:1000</div>
+        <script>
+            var i=0;
+            while(i<5){
+                document.getElementById("para").innerHTML
+                += "<br>" + i;
+                i++;
+            }
+            function game(){
+                var balance=1000;
+                var itemsbought=0;
+                while(balance>0){
+                var itemprice = Math.round(Math.random()*100);
+                if(itemprice<=balance){
+                    itemsbought += 1;
+                    balance -= itemprice;
+                }
+                document.getElementById("balance").innerHTML
+                += "<p>Purchase amount:" + itemprice + "New Balane:" + balance + "</p>";
+                }
+                document.getElementById("balance").innerHTML
+                += "<p>You bought:" + itemsbought + "</p>";
+            }
+        </script>
+    </body>
+</html>

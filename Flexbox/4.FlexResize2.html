@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            background-color: #07575b;
+            height: 200px;
+            margin: 10px;
+            display: flex;
+            flex-wrap:nowrap;
+            flex-direction: row;
+            
+
+        }
+        .container div{
+            background-color: #66a5AD;
+            color: aliceblue;
+            text-align: center;
+            border: 1px solid black;        /* Auto means flex: 1 1 auto;*/
+            padding: 10px;                    /* Initial means flex:0 1 auto;*/
+            flex: auto;                       /* None means flex:0 0 auto;*/           
+        }
+
+            
+    </style>
+</head>
+<body>
+   <div class="container"> 
+     <div id="Apple">Apple</div>
+     <div id="Facebook">Facebook</div>
+     <div id="Microsoft">Microsoft Microsoft Microsoft Microsoft</div>
+     <div id="Google"> Google Google</div>
+     <div id="Amazon">Amazon</div>
+     <div id="Samsung">Samsung</div>
+     
+    
+     
+     
+     
+  </div>  
+    
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+      ul{
+        list-style: square;
+        list-style-image: url(Image/blueBox.png);
+      }
+      
+    </style>
+</head>
+<body>
+    <h1>Heading size max</h1>
+    <h2>Heading size 2</h2>
+    <h3>Heading size 3</h3>
+    <h4>Heading size 4</h4>
+    <h5>Heading size 5</h5>
+    <h6>Heading size 6</h6>
+<!--p is for para,
+strong and b are for bold letters,
+i is for itallic,
+small is used for small size text  --> 
+
+<!--lorem is used to get random words, eg. lorem50-->
+    <p><strong> ipsum dolor sit amet consectetur adipisicing elit</strong>ipsum dolor sit amet ipsum dolor sit amet consectetur <b>adipisicing elit</b>. Ducimus assumenda recusandae sit sint<i>eaque omnis odit suscipit?</i> sequi expedita.<small> Veniam sint  Molestiae </small> Veniam sint  Molestiae perspiciatis 10 <sup>2</sup>, 10 <sub>2</sub> nobis porro voluptatum ipsa? Consequatur, debitis maiores?
+<!--hr is used for horizontal line-->
+<!--sub means subscript used to represent a no. in log
+    sup means superscript used to represent power -->
+</p>
+
+<hr>
+
+<h2>Ordered List</h2>
+<!--OL means Ordered List and Ul means unordered List-->
+<ol type="A">
+    <li>Element 1</li>
+    <li>Element 2 </li>
+</ol>
+<hr>
+
+<h2>Unordered List</h2>
+<ul >
+    <li>Step 1
+        <ol type="I">
+            <li>Additional Step</li>           <!--NESTED LIST-->
+        </ol>
+    </li>
+    <li>Step 2</li>
+</ul>  
+
+<hr>
+
+<!--a(anchor) tag is used for path -->
+<!--We give url in href and then we name the link -->
+<!--br tag used for nxt line-->
+
+<a href="https://www.google.com" target="_blank" ><h2>GOOGLE</h2></a>      <!--this is absolute path-->                 
+<br>
+<a href="text/1.Revision of Python Covered in Class--XI.pdf" target="_blank"><h2>Revision</h2></a>        <!--this was relative path-->
+<br>
+<hr>
+
+<img src="image/ss.png" width="300" alt="Image not found">
+<!--<img is used to display image on page-->
+<!--text written in alt will display when image is not available-->
+<br>
+<!--../ is used to approch the file which is outside the main folder(can be used multiple times if needed)-->
+
+<!--<img src="../ss2.png" width="300" alt="Image not found">-->
+
+<hr>
+
+<!--<video is used for videos (same as image but no alt)-->
+ 
+<video src="video/video1.mp4" width="300" controls muted poster="image/ss.png"></video>    
+<hr>
+
+<!--ifrme is used to display other website on page-->
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2QR11oDukn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+<hr>
+<iframe src="https://en.wikipedia.org/wiki/Wiki" width="500"></iframe>
+<hr>
+
+<table>
+    <thead>
+      <tr>                          <!--tr is row-->
+        <th>S.NO</th>               <!--th is table heading--> 
+        <th>NAME</th>
+        <th>ROLL</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>                  <!--td is table data-->
+        <td>XYZ</td>
+        <td>12</td>
+
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>QWE</td>
+        <td>13</td>
+
+      </tr>
+    </tbody>
+    <tleg>
+     <th colspan="3">Total:2</th>    <!--colspan is used to merge columns, 5 is the distance from begining-->
+    </tleg>
+</table>
+
+
+
+<br>
+<br>
+
+
+<a href="page2.html" >Page2</a>  
+</body>
+</html>

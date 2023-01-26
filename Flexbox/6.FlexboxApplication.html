@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Checkout</title>
+    <link rel="stylesheet" type="text/css" href="styleform.css">
+</head>
+<body>
+   <form>
+     <div class="container">
+        <div class="details">
+           <div class="address">
+              <div class="form-group">
+                  <label for="address">Address:</label>
+                  <input type="text" name="address" id="address" placeholder="Address">
+              </div>
+              <div class="form-group">
+               <label for="postcode">Postcode:</label>
+               <input type="text" name="postcode" id="postcode" placeholder="Postcode">
+              </div>
+              <div class="form-group">
+              <label for="city">City:</label>
+              <input type="text" name="city" id="city" placeholder="City">
+              </div>
+             
+         </div>
+         <div class="shipping">
+             <div>Choose your shipping method:</div>
+             <div>
+                <select>name="shipping method" id="shipping method"
+                   <option value="Free Super Saver Shipping" >Free Super Saver Shipping</option>
+                  <option value="Free Super Saver Shipping" >Free Super Saver Shipping</option>
+                   <option value="Free Super Saver Shipping" >Free Super Saver Shipping</option> 
+                </select>
+             </div>
+          </div>
+          <div class="payment">
+             <div>Choose Payment Method:</div>
+             <div>
+                <label for="paypal">Paypal
+                <input type="radio" name="payment" id="payment"></label>
+                <label for="Debit Card">Debit Card
+                <input type="radio" name="payment" id="payment"></label>
+                <label for="Credit Card">Credit Card
+                <input type="radio" name="payment" id="payment"></label>
+            </div>
+          </div>
+          <div class="checkbox">
+             
+            <label for="Securely save my payment details">Securely Save my payment details<input type="checkbox" name="updates" id="updates"></label>
+            <label for="Sign me up for email details">Sign me up for email details<input type="checkbox" name="updates" id="updates"></label>
+             
+
+          </div>
+        </div>
+        <div class="comments">
+          <label for="comments">Comments:</label>
+          <textarea name="comments" id="comments" rows="4" cols="40"></textarea>
+         </div>
+     </div>
+     <div class="submit">
+      <button type="submit">Submit</button>
+      </div>
+   </form> 
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+    <style>
+        .facebook{
+            background-color: blue;
+            height: 100px;
+            width: auto;
+            font-size: 20px;
+        }
+        .apple{
+            background-color: red;
+            height: 100px;
+            width: auto;
+            font-size: 20px;
+        }
+        .microsoft{
+            background-color: rgb(50, 206, 71);
+            height: 100px;
+            width: auto;
+            font-size: 20px;
+        }
+        .great{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="facebook" id="facebook">
+        <p>Facebook is <span class="great"> great</span>.</p>
+    </div>
+    <div class="apple" id="apple">
+        <p>Apple is <span class="great"> great</span>.</p>
+    </div>
+    <div class="microsoft" id="microsoft">
+        <p>Microsoft is <span class="great"> great</span>. </p>
+    </div>
+    <button id="button1" onclick="swap('facebook','apple')">Swap Facebook Color.</button>
+    <button id="button2" onclick="swap('apple','microsoft')">Swap Apple Color.</button>
+    <script>
+        function greetings(){
+            window.alert("Hello!!")
+        }
+        //greetings();
+        function greetings2(firstname){
+            window.alert("Hello " + firstname + "!!")
+        }
+        //greetings2('John');
+        function sum(x,y){
+            return x + y
+        }
+        var x=sum(3,7);
+        //window.alert(x);
+        
+        function swap(id1,id2){
+            var y;
+            y = document.getElementById(id1).innerHTML;
+            var z;
+            z = document.getElementById(id2).innerHTML;
+            document.getElementById(id2).innerHTML = y;
+            document.getElementById(id1).innerHTML = z;
+
+        }
+    </script>
+</body>
+</html>

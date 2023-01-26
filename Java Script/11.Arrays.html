@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <p id="array">Java Script</p>
+    <script>
+        var shoppinglist = ["bread","eggs","milk"];
+        function showresult(x){
+            document.getElementById("array").innerHTML
+            += "<br >" + x 
+        }
+        showresult(shoppinglist);
+        showresult(shoppinglist[0]);
+        shoppinglist[1] = "yogurt";
+        showresult(shoppinglist);
+        delete shoppinglist[1];
+        showresult(shoppinglist);
+        shoppinglist[1] = "yogurt";
+        showresult(shoppinglist);
+        shoppinglist.splice(1,1);
+        showresult(shoppinglist);
+        shoppinglist.splice(1,0,"apple","banana");
+        showresult(shoppinglist);
+        shoppinglist.sort();
+        showresult(shoppinglist);
+        shoppinglist.reverse();
+        showresult(shoppinglist);
+        var string = "ABCD";
+        var myArray = string.split('');
+        showresult(myArray);
+        var myArray = string.split('',2);
+        showresult(myArray);
+    </script>
+</body>
+</html>

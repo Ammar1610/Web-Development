@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+</head>
+<body>
+    <p>Java Script</p>
+    <button onclick="alert('How can I help you?')">Help</button>
+    <button id="button2">Click Me</button>                       
+    <script>                         /*Another way of using alert is by accessing button, we can use onclick also in place of onmouseover*/
+        document.getElementById("button2").onmouseover=function(){   
+            alert("You Just Hovered on Click ME");
+        }
+    </script>
+</body>
+</html>

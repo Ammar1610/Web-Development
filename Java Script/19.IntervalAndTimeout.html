@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interval and Timeout</title>
+</head>
+<body>
+    <p id="timer">0</p>
+    <button onclick="clearInterval(interval)">Stop Timer</button>
+    <br>
+    <button onclick="clearTimeout(delayedmessage)">Stop Welcome Message</button>
+    <script>stop
+        var x=0;
+        var timer=document.getElementById("timer");
+        var interval=setInterval(function(){x++;timer.innerHTML=x},1000);       //setinterval(function,time in ms)
+        var delayedmessage=setTimeout(function(){window.alert("Welcome to the webpage!!!")},3000)
+
+    </script>
+    
+</body>
+</html>

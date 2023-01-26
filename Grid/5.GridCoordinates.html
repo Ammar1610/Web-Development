@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Coordinates</title>
+</head>
+<style>
+    .container{
+           background-color: #07575b;
+           padding: 5px; 
+           height: 250px; 
+           display: grid;
+           grid-template-rows: 1fr 1fr 1fr 1fr;
+           grid-template-columns:20% 100px [Col2]1fr 20%;
+           grid-gap: 5px;
+           grid-template-areas: 
+           "a b c d"
+           "e f g h"
+           "i j k l"
+           "m n o p"; 
+
+        }
+        .container div{
+            background-color: #66a5AD;
+            color: aliceblue;
+            text-align: center;
+            padding: 10px;
+        }
+        .apple{
+           /* grid-row-start: 1;
+            grid-column-start: 1;
+            grid-row-end: 3;
+            grid-column-end: 3;  */
+
+           /* grid-area: 1/1/3/3;  */
+
+           grid-area: 1/1/3/Col2;
+
+        }
+        .microsoft{
+            grid-area: 3/3;
+        }
+        .facebook{
+            grid-area: p/p;
+        }
+        .samsung{
+            grid-area: 2/3/span 2;
+        }
+        .amazon{
+            grid-area:o;
+        }
+ 
+
+</style>
+<body>
+    <div class="container">
+        <div class="apple">Apple</div>
+        <div class="microsoft">microsoft</div>
+        <div class="facebook">Facebook</div>
+        <div class="amazon">Amazon</div>
+        <div class="samsung">Samsung</div>
+        <div>Apple 2</div>
+        <div>microsoft 2</div>
+        <div>Facebook 2</div>
+        <div>Amazon 2</div>
+        <div>Samsung 2</div>
+        <div>Apple</div>
+        <div>Apple</div>
+        <div>Apple</div>
+        <div>Apple</div>
+        <div>Apple</div>
+        <div>Apple</div>
+
+    </div>
+    
+</body>
+</html>

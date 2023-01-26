@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Style </title>
+    <style>
+        .facebook{
+            background-color: blue;
+            height: 100px;
+            width: auto;
+            font-size: 20px;
+        }
+        .apple{
+            background-color: red;
+            height: 100px;
+            width: auto;
+            font-size: 20px;
+        }
+        .microsoft{
+            background-color: rgb(50, 206, 71);
+            height: 100px;
+            width: auto;
+            font-size: 20px;
+        }
+        .great{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="facebook" id="facebook">
+        <p>Facebook is <span class="great"> great</span>.</p>
+    </div>
+    <div class="apple" id="apple">
+        <p>Apple is <span class="great"> great</span>.</p>
+    </div>
+    <div class="microsoft">
+        <p>Microsoft is <span class="great"> great</span>. </p>
+    </div>
+    <button id="button1">Change Facebook Style.</button>
+    <button id="button2">Change Apple Style.</button>
+    <script>
+        document.getElementById("button1").onclick=function(){
+            document.getElementById("facebook").style.width
+            = "200px"
+            document.getElementById("facebook").style.backgroundColor
+            = "cyan"
+        }
+        document.getElementById("button2").ondblclick=function(){
+            document.getElementById("apple").style.fontFamily
+            = "monospace"
+            document.getElementById("apple").style.fontSize
+            = "2em"
+        }
+    </script>
+</body>
+</html>

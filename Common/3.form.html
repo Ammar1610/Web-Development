@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+<form>
+    <h1>Payment Form</h1>
+    <h2>Contact Information</h2>
+    <p>REQUIRED DETAILS FOLLOWED BY *</p>
+<!--name will be the name by which value will be stored in the server hence need to be unique-->
+<!--fields will required has to be filled-->
+    <p>NAME*:<input type="text" name="name" required maxlength="50"></p>
+    <label for="name2">Father's name:</label>
+    <input type="text" name="name2" id="name2" placeholder="Father's name">
+    <br>
+    <br>
+    <label for="name3">Mother's name:</label>
+    <input type="text" name="name3" id="name3" placeholder="Mother's name">
+    <br>
+    <br>
+    <!--fieldset will keep the fields in a box-->
+    <fieldset>
+    <legend>Gender</legend>        <!--legend will give the heading of the box in fieldset-->     
+<!--name of both gender will remain same so that only one of them can be choosed-->
+    <p>Male <input type="radio" name="gender" id="male"> Female <input type="radio" name="gender" id="female"></p>
+    </fieldset>
+
+<!--textarea is used to have multiple lines to enter text-->
+    <p>Address: <textarea name="address" id="address" cols="100" rows="10"></textarea></p>
+
+<!--input type email is used for emails which also checks the format of email address-->
+    <p>Email:<input type="email" name="email" id="email"></p>
+
+    <p>Pincode*:<input type="number" name="pincode" id="pincode" required></p>
+
+    <h2>Payment Mode</h2>
+
+<!--entry in values will be stored in the server and  others will be the displayed option-->
+    <p>Card Type*: <select>name="cardtype" id="cardtype"
+        <option value= "">--SELECTANYONE--</option>
+        <option value="DEBIT CARD">DEBIT CARD</option>
+        <option value="CREDIT CARD">CREDIT CARD</option>
+        <option value="ATM CARD">ATM CARD</option>
+         </select required></p>
+
+         <p>Card Number*: <input type="password" name="cardnum" id="cardnum" required></p>
+
+         <p> Expiration Date*: <input type="date" name="expdate" id="expdate"required></p>
+
+         <p>CVV*: <input type="password" name="cvv" id="cvv"required></p>
+         <p>I have read the terms & conditions *<input type="checkbox" name="checkbox1" id="checkbox1" required></p>
+         <p>I want to recieve cookies<input type="checkbox" name="checkbox2" id="checkbox2" checked="checked"></p>
+
+         <input type="submit" value="PAY NOW">
+
+
+</form>
+    
+</body>
+</html>

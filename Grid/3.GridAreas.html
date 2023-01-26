@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{
+           background-color: #07575b;
+           padding: 5px; 
+           height: 100vh; 
+           display: grid;
+           grid-gap: 5px;
+           grid-template-areas:
+                "apple"
+                "facebook"
+                "microsoft"
+                "samsung"
+                "google" ;
+                grid-template-rows: 50px 100px 1fr 50px 100px;
+                grid-template-columns: 1fr;
+          
+           
+            
+        }
+
+        @media all and (min-width:700px){
+            .container{
+              
+                grid-template-rows:50px 1fr 50px;
+           grid-template-columns: 20% 1fr 20%;
+           grid-template-areas:
+                   "apple apple apple"
+                   "facebook microsoft samsung"
+                   "google google google";
+            }
+        }    
+        #apple{ 
+            grid-area: apple;
+             
+        }
+        #facebook{ 
+            grid-area: facebook;
+             
+        }
+        #microsoft{
+            grid-area: microsoft;
+        }
+        #samsung{
+            grid-area: samsung;
+        }
+
+        #google{ 
+            grid-area: google;
+             
+        }
+        .container div{
+            background-color: #66a5AD;
+            color: aliceblue;
+            text-align: center;
+            padding-top: 7px;
+            
+        }
+        
+
+
+    </style>
+</head>
+<body>
+   <div class="container"> 
+     <div id="apple">Apple</div>
+     <div id="facebook">Facebook</div>
+     <div id="microsoft">Microsoft</div>
+     <div id="samsung">samsung</div>
+     <div id="google">Google</div>
+     
+     
+     
+     
+
+    
+     
+     
+     
+  </div>  
+    
+</body>
+</html>

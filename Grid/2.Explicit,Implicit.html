@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explicit and Implicit</title>
+    <style>
+        .container{
+           background-color: #07575b;                          
+           padding: 5px; 
+         /* height: 250px;*/ 
+          /*Explicit is the content which already exists in the container or which has given its dimensions 
+           Implicit is the content which does not have any given dimensions.*/
+           display: grid;
+           grid-template-rows:repeat(4,45px);
+           grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+           grid-gap: 5px;                /*this seperates each grid*/
+           /*Here for extra rows we use Implicit Grid*/
+           grid-auto-rows: 70px;
+           grid-auto-flow: row;         /*this will decide from where the implicit content will extend*/
+           /*grid-auto-columns: 50px;*/ 
+
+        }
+        .container div{
+            background-color: #66a5AD;
+            color: aliceblue;
+            text-align: center;
+            padding-top: 7px;
+            
+           
+            }
+
+
+    </style>
+</head>
+<body>
+   <div class="container"> 
+     <div id="Apple">Explicit</div>
+     <div id="Facebook">Explicit</div>
+     <div id="Microsoft">Explicit</div>
+     <div id="Google">Explicit</div>
+     <div id="Amazon">Explicit</div>
+     <div id="Samsung">Explicit</div>
+     <div id="Apple">Explicit</div>
+     <div id="Facebook">Explicit</div>
+     <div id="Microsoft">Explicit</div>
+     <div id="Google">Explicit</div>
+     <div id="Amazon">Explicit</div>
+     <div id="Samsung">Explicit</div>
+     <div id="Apple">Explicit</div>
+     <div id="Facebook">Explicit</div>
+     <div id="Microsoft">Explicit</div>
+     <div id="Google">Explicit</div>
+     <div id="Google">Implicit</div>
+     <div id="Amazon">Implicit</div>
+     <div id="Samsung">Implicit</div>
+     <div id="Apple">Implicit</div>
+     <div id="Amazon">Implicit</div>
+     <div id="Samsung">Implicit</div>
+     <div id="Apple">Implicit</div>
+
+    
+     
+     
+     
+  </div>  
+    
+</body>
+</html>

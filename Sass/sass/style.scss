@@ -1,0 +1,18 @@
+//nesting
+//saas: syntactically awesme style sheets
+//variable below:
+@import "utils/variables";
+@import "components/nav";
+
+@import "base/base";
+
+article{
+    h3{
+        font-size: 30px;
+        color: $color2;
+    }
+    p{
+        font-size: 20px;
+        color: $color4;
+    }
+}

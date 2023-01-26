@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <p>Open Console</p>
+    <script> 
+    var myPhone = {
+        brand:"Apple",
+        model:"IPhone 4",
+        warranty:12,
+        color:"white"
+    }
+    window.console.log(typeof(myPhone));
+    window.console.log(myPhone);
+    delete myPhone.warranty;
+    window.console.log(myPhone);
+    window.console.log(myPhone.color);
+    var myOtherPhone = myPhone;               //both myOtherPhone and myPhone will become equivalent change in one will change other too.
+    window.console.log(myOtherPhone);
+    myOtherPhone.model="IPhone 5";
+    window.console.log(myOtherPhone);
+    window.console.log(myPhone);
+    </script> 
+     
+    
+</body>
+</html>

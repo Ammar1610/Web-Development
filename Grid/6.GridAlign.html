@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+</head>
+<style>
+    .container{
+           background-color: #07575b;
+           padding: 5px; 
+           height:100vh; 
+           display: grid;
+           grid-template-rows: repeat(4,110px);
+           grid-template-columns: repeat(auto-fill,500px);
+           grid-gap: 5px;
+        /*   /*To align items vertically in their rows*/
+        /*   align-items: center; */
+             /*To align items horizontally in their rows*/
+        /*  justify-items: center;         */
+             /*To align items vertically and horizontally */
+            /* place-items: center center; */
+             /*To align whole content vertically in their rows*/ 
+             /*align-content: start;*/
+             /*To align whole content horizontally in their rows*/    
+             /*justify-content: center;*/
+             /*To align content vertically and horizontally */
+             place-content: center center; 
+
+        }
+        .container div{
+            background-color: #66a5AD;
+            color: aliceblue;
+            text-align: center;
+            padding-top: 7px;
+        }
+        .apple{
+            height: 100px;
+        }
+        .facebook{
+            height: 70px;
+        }
+        .amazon{
+            height: 80px;
+        }
+        .samsung{
+            height: 50px;
+        }
+        .microsoft{
+            height: 45px;
+        }
+</style>
+<body>
+    <div class="container">
+        <div class="apple">Apple</div>
+        <div class="facebook">Facebook</div>
+        <div class="amazon">Amazon</div>
+        <div class="samsung">Samsung</div>
+        <div class="microsoft">Microsoft</div>
+        <div class="amazon">Amazon</div>
+        <div class="samsung">Samsung</div>
+        <div class="apple">Apple</div>
+        
+    </div>
+    
+</body>
+</html>

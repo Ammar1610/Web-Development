@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window and Screen</title>
+    <style>
+        #div1{
+            background-color: yellow;
+        }
+        #div2{
+            background-color: green;
+        }
+        #div3{
+            background-color: blue;
+        }
+        #div4{
+            background-color: red;
+        }
+        div{
+            float: left;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="div1">Div1</div>
+    <div id="div2">Div2</div>
+    <div id="div3">Div3</div>
+    <div id="div4">Div4</div>
+    <script>
+        var windowlength = window.innerHeight;           //var height=window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight; 
+       // window.alert(windowlength);
+                                                    //above was height of the page not the whole screen.
+       var screenWidth = window.screen.width;       //width of the whole screen we can use for height if we want/
+       //window.alert(screenWidth);
+
+       var availableHeight = window.screen.availHeight;
+       //window.alert(availableHeight);
+
+       for(i=1;i<5;i++){
+           document.getElementById("div"+i).style.height=window.innerHeight-10 +"px";
+           document.getElementById("div"+i).style.width=window.innerWidth/4-10 +"px";
+
+       }
+    </script>
+</body>
+</html>

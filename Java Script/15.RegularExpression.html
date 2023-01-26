@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expression</title>
+</head>
+<body>
+    <p>String:<span id="string"></span></p>
+    <p>Pattern:<span id="pattern"></span></p>
+    <p>Search:<span id="Search"></span></p>
+    <p>Match:<span id="Match"></span></p>
+    <p>Result:<span id="Result"></span></p>
+    <script>
+        var str = "Atlanta \n0123456789%$";    //i and g are modifiers
+        //var pattern = /a/i;                  //i will turn it into non-case sensitive.
+        //var pattern = /a/g;                  //g means global and it will give out all the pattens matched in the string.
+        //var pattern = /a-z/g;  
+        //var pattern = /[^atn]/g;
+        //var pattern = /[4-7]/g;
+        //var pattern = /\d/g;
+        //var pattern = /\d{5}/;
+        //var pattern = /\w/g;
+        //var pattern = /\W/g;
+        //var pattern = /\s/g;
+        //var pattern = /\n/g;
+         document.getElementById("string").innerHTML
+        = str;
+        document.getElementById("pattern").innerHTML
+        = pattern;
+        document.getElementById("Search").innerHTML
+        = str.search(pattern);
+        document.getElementById("Match").innerHTML
+        = str.match(pattern);
+        document.getElementById("Result").innerHTML
+        = pattern.test(str);
+
+        
+    </script>
+    
+</body>
+</html>

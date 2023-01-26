@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Color Genrator</title>
+    <style>
+        .facebook{
+            background-color: blue;
+            height: 100px;
+            width: auto;
+            font-size: 20px;
+        }
+        .apple{
+            background-color: red;
+            height: 100px;
+            width: auto;
+            font-size: 20px;
+        }
+        .microsoft{
+            background-color: rgb(50, 206, 71);
+            height: 100px;
+            width: auto;
+            font-size: 20px;
+        }
+        .great{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="facebook" id="facebook">
+        <p>Facebook is <span class="great"> great</span>.</p>
+    </div>
+    <div class="apple" id="apple">
+        <p>Apple is <span class="great"> great</span>.</p>
+    </div>
+    <div class="microsoft">
+        <p>Microsoft is <span class="great"> great</span>. </p>
+    </div>
+    <button id="button1">Change Facebook Color.</button>
+    <button id="button2">Change Apple Color.</button>
+    <script>
+        var color;
+        color = 'rgb(18,149,68)';
+       document.getElementById("button1").onclick = function(){
+           document.getElementById("facebook").style.backgroundColor
+           = color;
+       }
+           var x,y,z,randomcolor;
+           document.getElementById("button2").onclick = function(){
+          
+           x = Math.round(Math.random()*256);
+           y = Math.round(Math.random()*256);
+           z = Math.round(Math.random()*256);
+           randomcolor = 'rgb('+ x +','+ y +','+ z +')'
+           document.getElementById("apple").style.backgroundColor
+           = randomcolor;
+           document.getElementById("apple").innerHTML
+           = "<p>"+ randomcolor +"</p>";
+       }    
+           
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            background-color: #07575b;
+            height: 200px;
+            margin: 10px;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            
+
+        }
+        .container div{
+            background-color: #66a5AD;
+            color: aliceblue;
+            text-align: center;
+            border: 1px solid black;
+            padding: 10px;
+            flex-grow: 1;              /*It is the growth rate of width when the screen size increases. */
+            flex-shrink: 1;            /*It changes the initial width of the flex items.*/
+            flex-basis: 100px;         /*It is the shrink rate of width when the screen size decreases.(NEED TO SET FLEX-WRAP TO NOWRAP)*/ 
+            }                          /*We can use these three as flex:1 1 100px; */
+
+        #Apple{
+            flex-grow: 2;
+        }   
+        
+        #Google{
+            flex-shrink: 2;
+        }
+
+
+    </style>
+</head>
+<body>
+   <div class="container"> 
+     <div id="Apple">Apple</div>
+     <div id="Facebook">Facebook</div>
+     <div id="Microsoft">Microsoft</div>
+     <div id="Google"> Google Google</div>
+     <div id="Amazon">Amazon</div>
+     <div id="Samsung">Samsung</div>
+     
+    
+     
+     
+     
+  </div>  
+    
+</body>
+</html>

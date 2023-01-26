@@ -1,0 +1,24 @@
+nav{
+    display: flex;
+    background-color: $color1;
+    a{
+        flex: 1;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        color: blue;
+        &:hover{
+             background-color: yellow;
+        }
+        &:active{
+            background-color: greenyellow;
+        }
+        &.active{
+            font-weight:bold;
+            font-size: 24px;
+            color: purple;
+        }
+    } 
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Using NEW</title>
+</head>
+<body>
+    <p>Open console</p>
+    <script>
+        var myPhone = new Object();
+        myPhone.brand = "Samsung";
+        myPhone.model = "Samung X12";
+        myPhone.color = "white";
+        myPhone.warranty = 12;
+        window.console.log(myPhone);
+        myPhone.warranty = 0;
+        window.console.log(myPhone);
+        delete myPhone.warranty;
+        window.console.log(myPhone);
+    </Script> 
+   
+     
+    
+</body>
+</html>
